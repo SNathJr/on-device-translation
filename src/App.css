@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.container {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-container {
+  position: relative;
+  font-size: 14px;
+  color: white;
+  background-color: #5c5c5c;
+  border: solid 1px;
+  border-radius: 8px;
+  text-align: left;
+  overflow: hidden;
+  margin: 5px 0;
+}
+
+.progress-bar {
+  padding: 0 4px;
+  z-index: 0;
+  top: 0;
+  width: 1%;
+  height: 100%;
+  padding: 0% 2%;
+  overflow: hidden;
+  background-color: #2b919f;
+  white-space: nowrap;
+}
+
+.progress-text {
+  z-index: 2;
+}
+
+.progress-bars-container {
+  padding: 8px;
+  height: 150px;
+}
+
+.selector-container {
+  display: flex;
+  gap: 20px;
+}
+
+.textbox-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 800px;
+  min-height: 200px;
+}
+
+.language-container {
+  display: flex;
+  gap: 20px;
+}
+
+.textbox-container > textarea,
+.language-selector {
+  width: 50%;
+}
+
+.language-selector > select {
+  width: 150px;
+}
