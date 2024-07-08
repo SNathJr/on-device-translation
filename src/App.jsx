@@ -12,9 +12,9 @@ function App() {
 
   // Inputs and outputs
   const [input, setInput] = useState(
-    "The red panda shares the giant panda's rainy, high-altitude forest habitat, but has a wider range. "
-    + "Red pandas live in the mountains of Nepal and northern Myanmar (Burma), as well as in central China. "
-    + "These animals spend most of their lives in trees and even sleep aloft."
+    "The red panda shares the giant panda's rainy, high-altitude forest habitat, but has a wider range. " +
+      "Red pandas live in the mountains of Nepal and northern Myanmar (Burma), as well as in central China. " +
+      "These animals spend most of their lives in trees and even sleep aloft."
   );
   const [translationStart, setTranslationStart] = useState(new Date());
   const [translationEnd, setTranslationEnd] = useState(new Date());
@@ -151,6 +151,10 @@ function App() {
             <Progress text={data.file} percentage={data.progress} />
           </div>
         ))}
+      </div>
+
+      <div>
+        View on <a href="https://github.com/SNathJr/on-device-translation">github</a>.
       </div>
     </>
   );
